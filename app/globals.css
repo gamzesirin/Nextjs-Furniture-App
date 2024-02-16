@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--text-color-primary: black;
+	--text-color-secondary: #666;
+}
+
+body {
+	background: #fff;
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
