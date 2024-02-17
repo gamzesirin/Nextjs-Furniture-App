@@ -8,7 +8,8 @@ module.exports = {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'hero-pattern': "url('/images/header.png')"
+				'hero-pattern': "url('/images/header.png')",
+				'footer-texture': "url('/images/isik.png')"
 			}
 		}
 	},
