@@ -1,17 +1,27 @@
 import Image from 'next/image'
+import Paggination from '../public/images/Paggination.png'
 import React from 'react'
 import bgImg from '../public/images/header.png'
 import grup from '../public/images/grup.png'
 import koltuk from '../public/images/koltuk.png'
 import oda from '../public/images/oda.png'
 import oda2 from '../public/images/oda2.png'
+import oda3 from '../public/images/oda3.png'
+import sandalye from '../public/images/sandalye.png'
 import urun from '../public/images/urun.png'
+import urun1 from '../public/images/urun1.png'
+import urun2 from '../public/images/urun2.png'
+import urun3 from '../public/images/urun3.png'
+import urun4 from '../public/images/urun4.png'
+import urun5 from '../public/images/urun5.png'
+import urun6 from '../public/images/urun6.png'
+import urun7 from '../public/images/urun7.png'
 
 const Home = () => {
 	return (
 		<React.Fragment>
 			<header className="border">
-				<ul className="flex flex-wrap justify-center gap-20 p-5">
+				<ul className="flex flex-wrap justify-center gap-20 p-5 font-semibold">
 					<li>
 						<a href="/home">Ana Sayfa</a>
 					</li>
@@ -27,28 +37,39 @@ const Home = () => {
 				</ul>
 			</header>
 
-			<div className="bg-hero-pattern bg-cover bg-center h-[784px] flex flex-row justify-center items-center text-white gap-60">
+			<div className="bg-hero-pattern bg-cover bg-center h-[884px] flex flex-row justify-center items-center text-white gap-60">
 				<div className="w-96 flex flex-col flex-wrap items-start gap-5">
-					<h1 className="text-2xl">Furniture</h1>
+					<h1 className="text-2xl">Mobilya</h1>
 					<p>
-						Lorem ipsum dolor sit amet consectetur. At rhoncus etiam convallis ullamcorper sit. Velit pretium vitae
-						molestie viverra nibh posuere.
+						Mobilya seçimi yapmak ve ev dekorasyonu yapmak aslında basit gibi görünse de sürece bakıldığı zaman oldukça
+						zorlayıcı ve dikkat edilmesi gereken bir durum.
 					</p>
-					<p>Lorem ipsum dolor sit amet consectetur. At rhoncus etiam convallis ullamcorper sit. Velit pretium vitae</p>
-					<button className="bg-orange-400 text-white rounded-lg px-6 py-2 cursor-pointer">Read More</button>
+					<p>
+						Hepimiz yaşamışızdır elbette ki; en ufak bir ev dekorasyon ürününü veya aksesuarı alırken bile birden fazla
+						düşünmüş veya diğer alternatiflerini de kontrol etmişizdir.
+					</p>
+					<button className="bg-orange-400 text-white rounded-lg px-6 py-2 cursor-pointer">Daha Fazla</button>
 				</div>
 				<div>
-					<h1 className="text-6xl">
-						Make a room <br /> comfortable & <br /> elegant
+					<h1 className="text-8xl">
+						Bir oda yap <br /> rahat & <br />
+						zarifçe
 					</h1>
 				</div>
 				<div className="flex flex-col gap-10">
-					<h1 className="text-2xl">Featured</h1>
+					<h1 className="text-2xl text-black">Öne Çıkanlar</h1>
 					<div className="relative">
 						<Image src={koltuk} alt="featured" className="w-40" />
-						<div className="shadow-2xl shadow-white bg-white opacity-80  rounded-xl text-black absolute top-10 left-20 p-10">
-							<h2>Chair</h2>
-							<p>$100</p>
+						<div className=" text-black absolute top-16 font-semibold text-xs p-12">
+							<h2>Koltuk</h2>
+							<p>10000 TL</p>
+						</div>
+					</div>
+					<div className="relative">
+						<Image src={sandalye} alt="featured" className="w-40" />
+						<div className=" text-black absolute top-16 font-semibold text-xs p-12 ">
+							<h2>Sandalye</h2>
+							<p>200 TL</p>
 						</div>
 					</div>
 				</div>
@@ -57,19 +78,19 @@ const Home = () => {
 			<div className="grid grid-cols-4 divide-x divide-gray-500 bg-gray-300 p-10 rounded-3xl w-[60%] mx-auto gap-10 relative bottom-16">
 				<div>
 					<h1 className="text-4xl text-center">7</h1>
-					<p className="text-center">Years of experience</p>
+					<p className="text-center">Yılların Deneyimi</p>
+				</div>
+				<div>
+					<h1 className="text-4xl text-center">300+</h1>
+					<p className="text-center">Memnun Müşteriler</p>
+				</div>
+				<div>
+					<h1 className="text-4xl text-center">250+</h1>
+					<p className="text-center">Devamlı Müşteriler</p>
 				</div>
 				<div>
 					<h1 className="text-4xl text-center">100+</h1>
-					<p className="text-center">Happy customers</p>
-				</div>
-				<div>
-					<h1 className="text-4xl text-center">100+</h1>
-					<p className="text-center">Happy customers</p>
-				</div>
-				<div>
-					<h1 className="text-4xl text-center">100+</h1>
-					<p className="text-center">Happy customers</p>
+					<p className="text-center">Stoklu Ürünler</p>
 				</div>
 			</div>
 
@@ -108,7 +129,7 @@ const Home = () => {
 									d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0-3-3m3 3 3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"
 								/>
 							</svg>
-							<p>Free Delivery</p>
+							<p>Ücretsiz Teslimat</p>
 						</div>
 						<div className="bg-orange-400 text-white rounded-lg p-10 cursor-pointer flex flex-col items-center">
 							<svg
@@ -122,7 +143,7 @@ const Home = () => {
 								<path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
 								<path strokeLinecap="round" strokeLinejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
 							</svg>
-							<p>Free Delivery2</p>
+							<p>Kolay Kurulum</p>
 						</div>
 					</div>
 					<div className="flex flex-col gap-5 pt-10">
@@ -142,7 +163,7 @@ const Home = () => {
 								/>
 							</svg>
 
-							<p>Free Delivery3</p>
+							<p>Kaliteli Alışveriş</p>
 						</div>
 						<div className="bg-white text-orange-400 rounded-lg p-10 cursor-pointer flex flex-col items-center border-2 border-orange-400">
 							<svg
@@ -159,166 +180,181 @@ const Home = () => {
 									d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
 								/>
 							</svg>
-							<p>Free Delivery4</p>
+							<p>Güvenli Ödeme</p>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div className="flex flex-col items-center gap-5 mt-10">
-				<h1 className="text-2xl font-semibold">Oda Market</h1>
-				<p className="text-center text-gray-500 w-[600px]">
-					Lorem ipsum dolor sit amet consectetur. At rhoncus etiam convallis ullamcorper sit. Velit pretium vitae
-					molestie viverra nibh posuere. Lorem ipsum dolor sit amet consectetur. At rhoncus etiam convallis ullamcorper
-					sit.
+			<div className="flex flex-col items-center gap-10 mt-20">
+				<h1 className="text-2xl font-semibold">Mobilya Türleri</h1>
+				<p className="text-justify text-gray-500 w-[600px]">
+					Koltuk takımı bir evdeki neredeyse bütün dekorasyon içindeki en önemli mobilya takımlarının başında geliyor.
+					Aynı zamanda da en çok kullanılan mobilya olması durumu ile de bu sorunun sorulması oldukça anlamlı. Gelelim
+					mobilyanın nasıl seçilmesi gerektiğine.. Koltuk takımı seçilirken dış görüntüsü elbette size uygun olmalı
+					ancak dış görüntüsü kadar içi de oldukça önemli.
 				</p>
 			</div>
 
-			<div className="flex flex-col items-center gap-10 mt-10">
+			<div className="flex flex-col items-center gap-10 mt-20">
 				<div className="flex items-center gap-10">
 					<Image src={oda} alt="oda" />
 					<div className="flex flex-col gap-5 w-[500px]">
-						<h1 className="text-2xl font-medium">Bedroom</h1>
+						<h1 className="text-2xl font-medium">Klasik Mobilya</h1>
 						<p className="text-gray-500">
-							e. Ac consequat eget fusce nulla viverra. Nulla nibh massa mattis in. Tristique a tellus placerat ac eget.
-							Enim nunc augue fringilla amet. Parturient ornare blandit fames auctor augue.
+							Retro ve nostaljik tasarımları sevenler için tasarlanmış özel ürünler diyebiliriz. Evlerimize ayrı bir
+							şıklık ve detay katacak olan mobilya türleridir. Eski zamanlardan günümüze kadar süregelen bir yapıya
+							sahiptir. Klasik mobilyaları tamamlayan şeyler, konsol, ayna ve sehpadır. Klasik mobilyanın en belirgin
+							özelliği ahşaptan üretiliyor olmasıdır. Aynı zamanda ahşap olan bölümlerin oyularak işlenmesi de dikkat
+							çeken özellikleri arasındadır. Bu da eve başka hava katar. Klasik Mobilya tercih edenlerin, diğer eşyaları
+							da bu tarza yakın olmalıdır. Bu sayede daha şık ve güzel konseptler ortaya çıkacaktır. Ahşap mobilyaları
+							tamamlayacak diğer bir ürün ise yemek takımı seçimlerinizdir.
 						</p>
 					</div>
 				</div>
 				<div className="flex items-center gap-10">
 					<div className="flex flex-col gap-5 w-[500px]">
-						<h1 className="text-2xl font-medium">Bedroom</h1>
+						<h1 className="text-2xl font-medium">Modern Mobilya</h1>
 						<p className="text-gray-500">
-							e. Ac consequat eget fusce nulla viverra. Nulla nibh massa mattis in. Tristique a tellus placerat ac eget.
-							Enim nunc augue fringilla amet. Parturient ornare blandit fames auctor augue.
+							Mobilyada ön planda olan şey modern olmasıdır. Kişilerin yaşam tarzını yansıtması gerekir. Her kesime
+							hitap eden bir yapısı olan modern mobilya takımlarının en dikkat çeken özelliği her alana uyum sağlıyor
+							olmasıdır. Modern mobilyalar belirtilen kalite standartları dahilinde üretilir. Ayrıca kişilerin
+							ihtiyaçları düşünülerek tasarlanmış özel ürünlerdir. Bunlar diğer mobilyalara göre birazcık daha sade ve
+							şık tasarımlar da diyebiliriz.
 						</p>
 					</div>
-					<Image src={oda} alt="oda" />
+					<Image src={oda2} alt="oda" />
 				</div>
 				<div className="flex items-center gap-10">
-					<Image src={oda} alt="oda" />
+					<Image src={oda3} alt="oda" />
 					<div className="flex flex-col gap-5 w-[500px]">
-						<h1 className="text-2xl font-medium">Bedroom</h1>
+						<h1 className="text-2xl font-medium">Avangard Mobilya</h1>
 						<p className="text-gray-500">
-							e. Ac consequat eget fusce nulla viverra. Nulla nibh massa mattis in. Tristique a tellus placerat ac eget.
-							Enim nunc augue fringilla amet. Parturient ornare blandit fames auctor augue.
+							Avangard yani “Avantgarde” anlamı Fransızca bir terimdir. Kelime anlamı olarak önde gelen birinci, farklı,
+							olağandışı, demektir. Avangard mobilyayı evinizin her alanında tercih edebilirsiniz. Gösterişi severim
+							diyen biriyseniz bu tarz mobilyalar tam size göre. Avangard mobilya, yatak odası takımlarında ön plana
+							çıkarken, oturma gruplarında ve salon takımlarında da yerini ön sıralarda alıyor. Bu ürünlerle evinizin
+							ihtişamından gözlerinizi alamayacağınızı söyleyebiliriz.
 						</p>
 					</div>
 				</div>
 			</div>
 
-			<div className="flex flex-col items-center gap-5 mt-10 pt-10 bg-slate-100">
-				<h1 className="text-2xl font-semibold">Best Selling Products</h1>
+			<div className="flex flex-col items-center gap-5 mt-10 pt-10 bg-gray-300">
+				<h1 className="text-2xl font-semibold">En Çok Satılan Ürünler</h1>
 				<p className="text-center text-gray-500 w-[600px]">
-					e. Ac consequat eget fusce nulla viverra. Nulla nibh massa mattis in. Tristique a tellus placerat ac eget.
-					Enim nunc augue fringilla amet. Parturient ornare blandit fames auctor augue.
+					Mobilya hayatımıza bir yatak odası, yemek odası, mutfak, oturma odası gibi eşyalar ile dokunuşlar yapmaktadır.
+					Bu anlamda konfor ve kişiye hitap eden mobilyalar özellikle tercih meselesidir.
 				</p>
 			</div>
 
-			<div className="flex justify-center items-center h-screen bg-slate-100">
+			<div className="flex justify-center items-center p-20 bg-gray-300">
 				<div className="grid grid-cols-4 gap-4 text-orange-500">
 					<div className="flex flex-col">
-						<Image src={urun} alt="urun" className="border rounded-lg border-black bg-white" />
-						<h1 className=" font-semibold text-2xl mt-2">Chair</h1>
+						<Image src={urun} alt="urun" className="border rounded-lg border-black bg-white h-[250px]" />
+						<h1 className=" font-semibold text-2xl mt-2">Koltuk</h1>
 						<div className="flex items-center gap-2">
-							<p>$100</p>
-							<p className="text-xs line-through opacity-50">$200</p>
+							<p>500 TL</p>
+							<p className="text-xs line-through opacity-50">800 TL</p>
 						</div>
 					</div>
 					<div className="flex flex-col">
-						<Image src={urun} alt="urun" className="border rounded-lg border-black bg-white" />
-						<h1 className=" font-semibold text-2xl mt-2">Chair</h1>
+						<Image src={urun1} alt="urun" className="border rounded-lg border-black bg-white" />
+						<h1 className=" font-semibold text-2xl mt-2">Sandalye</h1>
 						<div className="flex items-center gap-2">
-							<p>$100</p>
-							<p className="text-xs line-through opacity-50">$200</p>
+							<p>500 TL</p>
+							<p className="text-xs line-through opacity-50">800 TL</p>
 						</div>
 					</div>
 					<div className="flex flex-col">
-						<Image src={urun} alt="urun" className="border rounded-lg border-black bg-white" />
-						<h1 className=" font-semibold text-2xl mt-2">Chair</h1>
+						<Image src={urun2} alt="urun" className="border rounded-lg border-black bg-white" />
+						<h1 className=" font-semibold text-2xl mt-2">Masa</h1>
 						<div className="flex items-center gap-2">
-							<p>$100</p>
-							<p className="text-xs line-through opacity-50">$200</p>
+							<p>500 TL</p>
+							<p className="text-xs line-through opacity-50">800 TL</p>
 						</div>
 					</div>
 					<div className="flex flex-col">
-						<Image src={urun} alt="urun" className="border rounded-lg border-black bg-white" />
-						<h1 className=" font-semibold text-2xl mt-2">Chair</h1>
+						<Image src={urun3} alt="urun" className="border rounded-lg border-black bg-white" />
+						<h1 className=" font-semibold text-2xl mt-2">Yatak</h1>
 						<div className="flex items-center gap-2">
-							<p>$100</p>
-							<p className="text-xs line-through opacity-50">$200</p>
+							<p>500 TL</p>
+							<p className="text-xs line-through opacity-50">800 TL</p>
 						</div>
 					</div>
 					<div className="flex flex-col">
-						<Image src={urun} alt="urun" className="border rounded-lg border-black bg-white" />
-						<h1 className=" font-semibold text-2xl mt-2">Chair</h1>
+						<Image src={urun4} alt="urun" className="border rounded-lg border-black bg-white" />
+						<h1 className=" font-semibold text-2xl mt-2">Dolap</h1>
 						<div className="flex items-center gap-2">
-							<p>$100</p>
-							<p className="text-xs line-through opacity-50">$200</p>
+							<p>500 TL</p>
+							<p className="text-xs line-through opacity-50">800 TL</p>
 						</div>
 					</div>
 					<div className="flex flex-col">
-						<Image src={urun} alt="urun" className="border rounded-lg border-black bg-white" />
-						<h1 className=" font-semibold text-2xl mt-2">Chair</h1>
+						<Image src={urun5} alt="urun" className="border rounded-lg border-black bg-white" />
+						<h1 className=" font-semibold text-2xl mt-2">Çerçeve</h1>
 						<div className="flex items-center gap-2">
-							<p>$100</p>
-							<p className="text-xs line-through opacity-50">$200</p>
+							<p>500 TL</p>
+							<p className="text-xs line-through opacity-50">800 TL</p>
 						</div>
 					</div>
 					<div className="flex flex-col">
-						<Image src={urun} alt="urun" className="border rounded-lg border-black bg-white" />
-						<h1 className=" font-semibold text-2xl mt-2">Chair</h1>
+						<Image src={urun6} alt="urun" className="border rounded-lg border-black bg-white" />
+						<h1 className=" font-semibold text-2xl mt-2">Çekmece</h1>
 						<div className="flex items-center gap-2">
-							<p>$100</p>
-							<p className="text-xs line-through opacity-50">$200</p>
+							<p>500 TL</p>
+							<p className="text-xs line-through opacity-50">800 TL</p>
 						</div>
 					</div>
 					<div className="flex flex-col">
-						<Image src={urun} alt="urun" className="border rounded-lg border-black bg-white" />
-						<h1 className=" font-semibold text-2xl mt-2">Chair</h1>
+						<Image src={urun7} alt="urun" className="border rounded-lg border-black bg-white" />
+						<h1 className=" font-semibold text-2xl mt-2">Beşik</h1>
 						<div className="flex items-center gap-2">
-							<p>$100</p>
-							<p className="text-xs line-through opacity-50">$200</p>
+							<p>500 TL</p>
+							<p className="text-xs line-through opacity-50">800 TL</p>
 						</div>
+					</div>
+					<div className="col-span-4 flex items-center justify-center">
+						<Image src={Paggination} alt="Paggination" />
 					</div>
 				</div>
 			</div>
 
-			<div className="flex flex-row items-center justify-center gap-20 p-16">
+			<div className="flex flex-row items-center justify-center gap-10 p-16">
 				<div className="flex flex-col gap-5">
 					<h1 className="text-4xl">
-						The Best Furniture <br /> Manufacturer Of Your Choice
+						En İyi Mobilya <br />
+						Seçtiğiniz Üreticiden
 					</h1>
-					<p className="text-gray-500">
-						Lorem ipsum dolor sit amet consectetur. <br /> At rhoncus etiam convallis ullamcorper sit. Velit pretium
-						vitae <br /> molestie viverra nibh posuere.
+					<p className="text-gray-500 text-justify text-sm">
+						Mobilya seçimi yapmak ve ev dekorasyonu yapmak aslında basit gibi görünse de <br />
+						sürece bakıldığı zaman oldukça zorlayıcı ve dikkat edilmesi gereken bir durum. <br />
+						Hepimiz yaşamışızdır elbette ki; en ufak bir ev dekorasyon ürününü veya <br />
+						aksesuarı alırken bile birden fazla düşünmüş veya diğer alternatiflerini de kontrol etmişizdir.
 					</p>
 				</div>
 				<div className="flex flex-col items-center gap-5">
 					<Image src={grup} alt="grup" />
 					<div className="flex flex-col items-center gap-5">
-						<h1 className="text-4xl">Interior Design By Us</h1>
-						<p className="text-gray-500 w-[500px] text-center">
-							Lorem ipsum dolor sit amet consectetur. At rhoncus etiam convallis ullamcorper sit. Velit pretium vitae.
-						</p>
+						<h1 className="text-4xl">İç Tasarım Tarafımızca</h1>
 					</div>
 				</div>
 			</div>
 
 			<div className="flex items-center justify-center gap-10">
 				<div className="flex flex-col gap-5">
-					<h1 className="text-4xl font-bold">What People Are Saying About Us</h1>
+					<h1 className="text-4xl font-bold">İnsanlar Hakkımızda Ne Söylüyor?</h1>
 					<div className="flex gap-4">
 						<Image src={bgImg} alt="bgImg" width={50} height={50} className="rounded-full" />
 						<div>
-							<h1 className="font-semibold">John Doe</h1>
+							<h1 className="font-semibold">Talha Derin</h1>
 							<p className="text-sm text-gray-500">Proje Yöneticisi</p>
 						</div>
 					</div>
 					<div className="flex flex-col gap-4">
 						<p>
-							“They are have a perfect touch for make something so <br /> professional ,interest and useful for a lot of
-							people .”
+							“Bir şeyleri yapmak için mükemmel bir dokunuşları var <br /> birçok insan için profesyonel, ilgi çekici ve
+							faydalı.”
 						</p>
 						<div>
 							<button>
@@ -359,16 +395,16 @@ const Home = () => {
 				<Image src={oda2} alt="oda2" />
 			</div>
 
-			<div className="flex flex-col items-end justify-center gap-5 mt-10 bg-footer-texture bg-cover bg-center h-[400px] text-white p-20">
+			<div className="flex flex-col items-end justify-center gap-5 mt-10 bg-footer-texture bg-cover bg-center h-[600px] text-white p-20">
 				<div className="flex flex-col gap-5 p-20">
 					<h1 className="text-6xl">
-						Get more discound <br /> Off your order
+						Daha fazla indirim alın <br /> Siparişinizin dışında
 					</h1>
-					<p className="text-3xl">Join our malinig list</p>
+					<p className="text-3xl">Mailiniz ile listemize katılın</p>
 
 					<div className="flex gap-3">
-						<input type="text" placeholder="Enter your email" className="border-2 rounded-lg p-2 outline-none" />
-						<button className="bg-orange-400 text-white rounded-lg px-6 py-2 cursor-pointer">Subscribe</button>
+						<input type="text" placeholder="Email giriniz" className="border-2 rounded-lg p-2 outline-none" />
+						<button className="bg-orange-400 text-white rounded-lg px-6 py-2 cursor-pointer">Abone Ol</button>
 					</div>
 				</div>
 			</div>
@@ -379,19 +415,19 @@ const Home = () => {
 
 					<ul className="flex gap-2">
 						<li>
-							<a href="#">home</a>
+							<a href="#">Anasayfa</a>
 						</li>
 						<li>
-							<a href="#">about</a>
+							<a href="#">Hakkımızda</a>
 						</li>
 						<li>
-							<a href="#">service</a>
+							<a href="#">Ürünler</a>
 						</li>
 						<li>
-							<a href="#">contact</a>
+							<a href="#">Hizmetlerimiz</a>
 						</li>
 						<li>
-							<a href="#">product</a>
+							<a href="#">İletişim</a>
 						</li>
 					</ul>
 
