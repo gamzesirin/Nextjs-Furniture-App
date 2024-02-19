@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
+import oda from '../../public/images/oda.png'
+import oda2 from '../../public/images/oda2.png'
+import oda3 from '../../public/images/oda3.png'
 
 const Shop = () => {
 	return (
