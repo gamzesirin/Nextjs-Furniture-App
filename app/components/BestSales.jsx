@@ -1,5 +1,14 @@
 import Image from 'next/image'
+import Paggination from '../../public/images/Paggination.png'
 import React from 'react'
+import urun from '../../public/images/urun.png'
+import urun1 from '../../public/images/urun1.png'
+import urun2 from '../../public/images/urun2.png'
+import urun3 from '../../public/images/urun3.png'
+import urun4 from '../../public/images/urun4.png'
+import urun5 from '../../public/images/urun5.png'
+import urun6 from '../../public/images/urun6.png'
+import urun7 from '../../public/images/urun7.png'
 
 const BestSales = () => {
 	return (
