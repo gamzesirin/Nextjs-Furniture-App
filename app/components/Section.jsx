@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
+import koltuk from '../../public/images/koltuk.png'
+import sandalye from '../../public/images/sandalye.png'
 
 const Section = () => {
 	return (
