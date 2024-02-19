@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import grup from '../../public/images/grup.png'
 
 const Best = () => {
 	return (
