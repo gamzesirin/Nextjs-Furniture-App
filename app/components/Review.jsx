@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
+import bgImg from '../../public/images/header.png'
+import oda2 from '../../public/images/oda2.png'
 
 const Review = () => {
 	return (
