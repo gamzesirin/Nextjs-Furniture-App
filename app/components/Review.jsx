@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import bgImg from '../../public/images/header.png'
 import oda2 from '../../public/images/oda2.png'
+import user from '../../public/images/user.jpg'
 
 const Review = () => {
 	return (
@@ -9,7 +9,7 @@ const Review = () => {
 			<div className="flex flex-col gap-5">
 				<h1 className="text-4xl font-bold">İnsanlar Hakkımızda Ne Söylüyor?</h1>
 				<div className="flex gap-4">
-					<Image src={bgImg} alt="bgImg" width={50} height={50} className="rounded-full" />
+					<Image src={user} alt="bgImg" width={50} height={50} className="rounded-full" />
 					<div>
 						<h1 className="font-semibold">Talha Derin</h1>
 						<p className="text-sm text-gray-500">Proje Yöneticisi</p>
