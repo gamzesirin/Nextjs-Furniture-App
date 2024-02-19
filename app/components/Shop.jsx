@@ -17,8 +17,8 @@ const Shop = () => {
 				</p>
 			</div>
 
-			<div className="flex flex-col items-center gap-10 mt-20">
-				<div className="flex items-center gap-10">
+			<div className="flex flex-col items-center gap-10 mt-20 ">
+				<div className="flex items-center gap-10  bg-orange-200 p-5">
 					<Image src={oda} alt="oda" />
 					<div className="flex flex-col gap-5 w-[500px]">
 						<h1 className="text-2xl font-medium">Klasik Mobilya</h1>
@@ -33,7 +33,7 @@ const Shop = () => {
 						</p>
 					</div>
 				</div>
-				<div className="flex items-center gap-10">
+				<div className="flex items-center gap-10 bg-green-200 p-5">
 					<div className="flex flex-col gap-5 w-[500px]">
 						<h1 className="text-2xl font-medium">Modern Mobilya</h1>
 						<p className="text-gray-500">
@@ -46,7 +46,7 @@ const Shop = () => {
 					</div>
 					<Image src={oda2} alt="oda" />
 				</div>
-				<div className="flex items-center gap-10">
+				<div className="flex items-center gap-10 bg-yellow-200 p-5">
 					<Image src={oda3} alt="oda" />
 					<div className="flex flex-col gap-5 w-[500px]">
 						<h1 className="text-2xl font-medium">Avangard Mobilya</h1>
